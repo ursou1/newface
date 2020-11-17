@@ -21,6 +21,11 @@ namespace newface
             Butterfly anotherbutterfly = new Butterfly("SOS", new DateTime(2014,8,4));
             Console.WriteLine($"Имя: {anotherbutterfly.Name} Возраст: {anotherbutterfly.Age}");
             ((IFlying)anotherbutterfly).Fly();
+
+
+            Gym gym = new Gym();
+            gym.AddAnimal(anotherdog, anotherbird, anotherfish, anotherbutterfly);
+            gym.LetsMove();
         }
     }
 }
